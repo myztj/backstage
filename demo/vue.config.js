@@ -7,6 +7,12 @@ module.exports = defineConfig({
         target:'http://leju.bufan.cloud',
         changeorigin:true
       }
+    },
+    proxy:{
+      "/admin":{
+        target:'http://leju.bufan.cloud',
+        changeorigin:true
+      }
     }
   }
 })
