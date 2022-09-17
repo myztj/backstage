@@ -33,6 +33,7 @@ export default {
             if (res.code==20000) {
                 this.$message.success('登录成功')
                 localStorage.setItem('token',res.data.token)
+                localStorage.setItem('name',res.data.userInfo.username)
                 this.$router.push('/')
             }
         })
